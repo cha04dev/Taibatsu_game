@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>体罰の定義ゲーム（開発中）</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>体罰の定義ゲーム（開発中）<a href="https://x.com/cha04_dev">ちゃおっしーTwitter</a></div>
+    <div id="main">
+        <div id="start-screen">
+            <div style="text-align: center; width: 100%;">
+                <input type="text" name="nickname" id="nickname" placeholder="ニックネームを入力" autofocus><br><br>
+                <button style="font-size: xx-large;" id="join-button">参加</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ライブラリ -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.0.1/pixi.min.js"></script>
+
+    <!-- 設定 -->
+    <script src="./js/SharedSettings.js"></script>
+    <script src="./js/RenderingSettings.js"></script>
+
+    <!-- モジュール -->
+    <script src="./js/Renderer/InfoRenderer.js"></script>
+    <script src="./js/Renderer/MapRenderer.js"></script>
+    <script src="./js/Renderer/PlayerRenderer.js"></script>
+    <script src="./js/Screen.js"></script>
+    <script src="./js/client.js"></script>
+</body>
+
+</html>
